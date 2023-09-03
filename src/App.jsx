@@ -6,17 +6,14 @@ import Footer from './components/Footer/Footer'
 import { Box ,createTheme,ThemeProvider} from '@mui/material'
 import {blue} from '@mui/material/colors'
 function App() {
+
   const theme= createTheme({
     palette:{
       primary:blue
     },
     transitions:{
-      
     },
-    
   })
-  // const color = red[500]
-  // console.log(color)
 
 
   return (

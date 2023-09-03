@@ -1,21 +1,10 @@
-import styled from '@emotion/styled'
-import { Box, Typography,Button, duration} from '@mui/material'
+import { Box, Button,} from '@mui/material'
 import AppBar from '@mui/material/AppBar'
 import ToolBar from '@mui/material/Toolbar'
-import { createTheme,ThemeProvider } from '@mui/material/styles'
-// import makeStyles from '@mui/styles/makeStyles'
 
 const Header = () => {
 
-const btnTheme = createTheme({
-  transitions:{
-    navBtn:{
-      transitionDuration:'3s'
-    }
 
-  }
-
-});
 
 const buttonList = ['Culture','Safety','Policies','Benefits','Time-Off','Contact']
 const ButtonMap = buttonList.map((button,index)=>{
@@ -34,15 +23,11 @@ const ButtonMap = buttonList.map((button,index)=>{
         borderRadius:'2px',
         color:'hotpink',
         padding:'0px'
-
-    }
-      
-    }}
-   >
-    <ThemeProvider theme={btnTheme}>
-    {button}
-    </ThemeProvider>
-    </Button>)
+      }
+    }}>
+      {button}
+    </Button>
+    )
   })
 
 
