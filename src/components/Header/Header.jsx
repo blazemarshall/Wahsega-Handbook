@@ -6,11 +6,11 @@ const Header = () => {
 
 
 
-const buttonList = ['Culture','Safety','Policies','Benefits','Time-Off','Contact']
+const buttonList = ['About','Culture','Safety','Policies','Benefits','Time-Off','Contact']
 const ButtonMap = buttonList.map((button,index)=>{
   return (
     <Button key={index} 
-    href={`/${button.toLowerCase()}`}
+    href={button.toLowerCase() === 'about'?`/${button.toLowerCase()}/whoWeAre`:`/${button.toLowerCase()}`}
     sx={{
       color:'white',
       padding:'0 5px',

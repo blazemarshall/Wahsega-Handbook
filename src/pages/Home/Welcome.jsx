@@ -6,7 +6,7 @@ const Wecome = () => {
     sx={{
       padding:'1px',
       backgroundColor:'primary.main',
-      height:'100vh',
+      height:'auto',
       boxShadow:'0 5px 15px 0px black'
     }}>
 
