@@ -2,7 +2,6 @@
 import RoutePaths from './routes/RoutePaths'
 import {BrowserRouter as Router} from 'react-router-dom'
 import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
 import { Box ,createTheme,ThemeProvider} from '@mui/material'
 import {blue} from '@mui/material/colors'
 function App() {
@@ -22,13 +21,15 @@ function App() {
 
 
     <Header />
-    <Box  color='primary'      sx={{margin:"70px 0 0 0",}} >
+    <Box  
+    sx={{
+      margin:"70px 0 0 0",
+    }} >
 
        <Router>
         <RoutePaths />
        </Router>
     </Box>
-    <Footer />       
        </ThemeProvider>
     </>
   )

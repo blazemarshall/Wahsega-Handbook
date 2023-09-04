@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router"
-import Home from "../pages/Home"
+import Home from "../pages/Home/Home.jsx"
 import Culture from "../pages/Culture"
 import Safety from "../pages/Safety"
 import Policies from "../pages/Policies"
