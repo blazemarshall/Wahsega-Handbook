@@ -1,4 +1,6 @@
-import { Box, Container, Typography } from "@mui/material"
+import { Box, Container, Typography, } from "@mui/material"
+
+
 
 const WhereWeCameFrom = () => {
   return (
@@ -14,7 +16,8 @@ const WhereWeCameFrom = () => {
         justifyContent:'center',
         boxShadow:'0 0px 50px 5px #1976d2 inset',
         backgroundColor:'info.dark',
-        borderRadius:'5px'
+        borderRadius:'5px',
+
     }}>
         <Typography variant="h4" color='white'>
         Where we came from</Typography>

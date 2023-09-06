@@ -6,7 +6,7 @@ const WhoWeAre = () => {
     sx={{
         display:'flex',
         flexDirection:'column',
-        margin:'0 -21.5px ',
+        margin:'0 -22px ',
         padding:'50px 50px',
         width:'91vw',
         height:'80vh',
@@ -57,7 +57,8 @@ what they do best.
         <Box sx={{
             display:'flex',
             padding:'50px',
-            backgroundColor:'#000033'
+            backgroundColor:'#3399ff',
+            boxShadow:'0 0 1500px 5px black inset,0 0 10px black'
         }}>
             <Typography color='white' sx={{
                 padding:'100px 20px'

@@ -1,4 +1,5 @@
 import { Box, Container, Typography } from '@mui/material'
+import { myEffect } from './animationKeyframes/homeKeyframes'
 
 const Wecome = () => {
   return (
@@ -7,7 +8,8 @@ const Wecome = () => {
       padding:'1px',
       backgroundColor:'primary.main',
       height:'auto',
-      boxShadow:'0 5px 15px 0px black'
+      boxShadow:'0 5px 15px 0px black',
+      animation:`${myEffect} 2s ease ` 
     }}>
 
     <Typography variant='h4'
@@ -34,7 +36,6 @@ const Wecome = () => {
       <Typography sx={{
         margin:'1px -23px 1px',
         boxShadow:'0 0 50px 5px #1976d2 inset',
-
         height:'10vh',
         color:'white',
         padding:'50px',
@@ -49,8 +50,14 @@ been written to serve as the guide for the employer/employee relationship.
  </Typography>
  <Box sx={{
         margin:'0 -23px ',
-        width:'100%',
-        padding:'50px ',
+        width:{ 
+          // xs:-,
+          sm:'116%',
+          md:'112%',
+          lg:'111%',
+          // xl:,
+        },
+        padding:'50px 0 ',
         backgroundRepeat:'no-repeat',
         backgroundSize:'94.15% 100%',
         height:'200px',

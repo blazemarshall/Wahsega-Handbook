@@ -10,7 +10,7 @@ const buttonList = ['About','Culture','Safety','Policies','Benefits','Time-Off',
 const ButtonMap = buttonList.map((button,index)=>{
   return (
     <Button key={index} 
-    href={button.toLowerCase() === 'about'?`/${button.toLowerCase()}/whoWeAre`:`/${button.toLowerCase()}`}
+    href={button.toLowerCase() === 'about'?`/${button.toLowerCase()}/1`:`/${button.toLowerCase()}`}
     sx={{
       color:'white',
       padding:'0 5px',

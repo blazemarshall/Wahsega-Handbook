@@ -10,14 +10,17 @@ const About = () => {
         boxShadow:'0 5px 15px 0px black'
     }}>
         <Toolbar>
-            <Button variant="a" href='/about/whoWeAre' sx={{
+            <Button variant="a" href='/about/1' sx={{
                 color:'white'
             }}
             >Who We Are</Button>
-            <Button variant='a' href='/about/whereWeCameFrom' sx={{
+            <Button variant='a' href='/about/2' sx={{
                 color:"white"
             }}
             >Where We Came From</Button>
+            <Button variant="a"href="/about/3" sx={{
+                color:'white'
+            }}>What We Believe In</Button>
 
         </Toolbar>
         <Outlet />
