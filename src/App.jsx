@@ -1,9 +1,9 @@
 // import { useState } from 'react'
 import RoutePaths from './routes/RoutePaths'
 import {BrowserRouter as Router} from 'react-router-dom'
-import Header from './components/Header/Header'
 import { Box ,createTheme,ThemeProvider} from '@mui/material'
 import {blue} from '@mui/material/colors'
+import NavigationBar from './components/Header/NavigationBar'
 function App() {
 
   const theme= createTheme({
@@ -20,7 +20,7 @@ function App() {
     <ThemeProvider theme={theme}>
 
 
-    <Header />
+    <NavigationBar />
     <Box  
     sx={{
       margin:"70px 0 0 0",
