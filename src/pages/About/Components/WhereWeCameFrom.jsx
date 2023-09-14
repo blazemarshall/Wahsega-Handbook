@@ -1,26 +1,28 @@
 import { Box, Container, Typography, } from "@mui/material"
+import PageTitle from "../../../components/common/pageComponents/typography/PageTitle"
+import SubPage from "../../../components/common/pageComponents/layout/SubPage"
 
 
 
 const WhereWeCameFrom = () => {
   return (
-    <Container id='#whereWeCameFrom'
-    sx={{
-        margin:'0 -23px  ',
-        padding:' 150px 75px',
-        color:'white',
-        display:'flex',
-        width:'91vw',
-        height:'80vh',
-        flexDirection:'column',
-        justifyContent:'center',
-        boxShadow:'0 0px 50px 5px #1976d2 inset',
-        backgroundColor:'info.dark',
-        borderRadius:'5px',
+    <SubPage id='#whereWeCameFrom'
+    // sx={{
+    //     // margin:'300px -23px  ',
+    //     padding:' 550px 75px',
+    //     color:'white',
+    //     display:'flex',
+    //     width:'91vw',
+    //     height:'80vh',
+    //     flexDirection:'column',
+    //     justifyContent:'center',
+    //     boxShadow:'0 0px 50px 5px #1976d2 inset',
+    //     backgroundColor:'info.dark',
+    //     borderRadius:'5px',
 
-    }}>
-        <Typography variant="h4" color='white'>
-        Where we came from</Typography>
+    // }}
+    >
+        <PageTitle  >Where we came from</PageTitle>
         <Box sx={{
             padding:'20px',
             textIndent:'50px'
@@ -71,7 +73,7 @@ purpose of making sure each and every customer is beyond happy. Through the prin
 every internal and external process which results in better outcomes for our customers and our staff.
         </Typography>
             </Box>
-    </Container>
+    </SubPage>
   )
 }
 

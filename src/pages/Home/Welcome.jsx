@@ -1,10 +1,14 @@
 import { Box, Container, Typography } from '@mui/material'
 import { myEffect } from './animationKeyframes/homeKeyframes'
+import { useState } from 'react'
 
-const Wecome = () => {
+const Welcome = () => {
   return (
     <Container 
     sx={{
+      display:'flex',
+      flexDirection:'column',
+      // gap:'1rem',
       padding:'1px',
       backgroundColor:'primary.main',
       height:'auto',
@@ -30,13 +34,18 @@ const Wecome = () => {
       display:'flex',
       justifyContent:'center',
       flexDirection:'column',
+      overflow:'hidden',
+      width:'100%',
+      padding:'0 23px',
+      margin:'0 -23px'
+
     }}
     >
   
       <Typography sx={{
         margin:'1px -23px 1px',
         boxShadow:'0 0 50px 5px #1976d2 inset',
-        height:'10vh',
+        // height:'10vh',
         color:'white',
         padding:'50px',
         backgroundColor:'info.dark',
@@ -60,7 +69,12 @@ been written to serve as the guide for the employer/employee relationship.
         padding:'50px 0 ',
         backgroundRepeat:'no-repeat',
         backgroundSize:'94.15% 100%',
-        height:'200px',
+        height:
+        {xs:'150px',
+          sm:'200px',
+          md:'400px',
+          // md:'200%',
+      },
         backgroundImage:'url("https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80")'
       }}
       />
@@ -85,4 +99,4 @@ you, you should address your specific questions to the Human Resource department
   )
 }
 
-export default Wecome
+export default Welcome

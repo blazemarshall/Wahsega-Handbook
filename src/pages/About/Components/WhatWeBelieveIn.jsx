@@ -1,21 +1,26 @@
 import { Box, Container, Stack, Typography } from "@mui/material"
+import BulletPoint from "../../../components/common/pageComponents/typography/BulletPoint"
+import PageTitle from "../../../components/common/pageComponents/typography/PageTitle"
+import SubPage from "../../../components/common/pageComponents/layout/SubPage"
 
 const WhatWeBelieveIn = () => {
   return (
-    <Container sx={{
-        display:'flex',
-        flexDirection:'column',
-        boxShadow:'0 0px 50px 5px #1976d2 inset',
-        backgroundColor:'info.dark',
-        margin:'0 -2.9%',
-        width:'91.5vw'
-    }}>
+    <SubPage
+    //  sx={{
+        // display:'flex',
+        // flexDirection:'column',
+        // boxShadow:'0 0px 50px 5px #1976d2 inset',
+        // backgroundColor:'info.dark',
+        // margin:'0 -2.9%',
+        // width:'91.5vw'
+    // }}
+    >
         <Box sx={{
             padding:'60px',
             justifyContent:'center',
             display:'flex',
         }}>
-            <Typography variant='h4' color={"white"}>What We Believe In</Typography>
+            <PageTitle >What We Believe In</PageTitle>
         </Box>
         <Box sx={{
             display:'flex',
@@ -32,11 +37,11 @@ substantial changes over time.
 }}>
 <Typography color={"white"}>The core tenets of continuous improvement of Kaizen include:</Typography>
 <Stack direction={"column"}>
-    <Typography color={'white'} variant="h8">● Standardizing a process so it is repeatable and organized</Typography>
-    <Typography color={'white'} variant="h8">● Focusing on measurability and evaluating progress using data</Typography>
-    <Typography color={'white'} variant="h8">● Comparing results against your requirements (did you deliver on your promise?)</Typography>
-    <Typography color={'white'} variant="h8">● Innovating new and better ways to achieve similar results </Typography>
-    <Typography color={'white'} variant="h8">● Responding to changing circumstance and evolving your methods over time</Typography>
+    <BulletPoint color={'white'} variant="h8">● Standardizing a process so it is repeatable and organized</BulletPoint>
+    <BulletPoint color={'white'} variant="h8">● Focusing on measurability and evaluating progress using data</BulletPoint>
+    <BulletPoint color={'white'} variant="h8">● Comparing results against your requirements (did you deliver on your promise?)</BulletPoint>
+    <BulletPoint color={'white'} variant="h8">● Innovating new and better ways to achieve similar results </BulletPoint>
+    <BulletPoint color={'white'} variant="h8">● Responding to changing circumstance and evolving your methods over time</BulletPoint>
 </Stack>
 </Box>
 <Typography color={'white'} variant="p">At Wahsega, our goal is to empower our team members to make their processes better and the
@@ -57,7 +62,7 @@ rolling out new initiatives and projects.
                 and products” - Joey Gullo</Typography>
             </Box>
         </Box>
-    </Container>
+    </SubPage>
   )
 }
 

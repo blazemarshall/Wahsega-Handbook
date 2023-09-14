@@ -9,6 +9,7 @@ import About from "../pages/About/About.jsx"
 import WhoWeAre from "../pages/About/Components/WhoWeAre.jsx"
 import WhereWeCameFrom from "../pages/About/Components/WhereWeCameFrom.jsx"
 import WhatWeBelieveIn from "../pages/About/Components/WhatWeBelieveIn.jsx"
+import Ethics from "../pages/About/Components/Ethics.jsx"
 
 const RoutePaths = () => {
   return (
@@ -18,6 +19,7 @@ const RoutePaths = () => {
           <Route path='1' element={<WhoWeAre />} />
           <Route path='2' element={<WhereWeCameFrom />} />
           <Route path='3' element={<WhatWeBelieveIn />} />
+          <Route path='4' element={<Ethics />} />s
         </Route>
         <Route  path ='/benefits' element={<Benefits />} />
         <Route  path ='/contact' element={<Contact/>} />

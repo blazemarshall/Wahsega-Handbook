@@ -3,7 +3,7 @@ import RoutePaths from './routes/RoutePaths'
 import {BrowserRouter as Router} from 'react-router-dom'
 import { Box ,createTheme,ThemeProvider} from '@mui/material'
 import {blue} from '@mui/material/colors'
-import NavigationBar from './components/Header/NavigationBar'
+import NavigationBar from './components/NavigationBar/NavigationBar'
 function App() {
 
   const theme= createTheme({

@@ -1,8 +1,12 @@
+import Page from "../../components/common/pageComponents/layout/Page"
 import Welcome from "./Welcome"
 const Home = () => {
-  return (<>
+  return (
+  <Page>
   <Welcome />
-  </>
+  </Page>
+    
+  
   )
 }
 

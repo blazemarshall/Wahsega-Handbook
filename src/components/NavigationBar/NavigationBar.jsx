@@ -4,6 +4,8 @@ import AppBar from '@mui/material/AppBar'
 import ToolBar from '@mui/material/Toolbar'
 import { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
+import MenuButton from './components/MenuButton'
+import MenuDrawer from './components/MenuDrawer.jsx'
 
 const NavigationBar = () => {
 
@@ -36,42 +38,15 @@ const ButtonMap = buttonList.map((button,index)=>{
     )
   })
 
-const MenuButton = () =>{
-    return (<Button key='menuBtn'
-       onClick={()=>setMenuBtnClicked(!menuBtnClicked)} 
-    variant='contained'  ><MenuIcon />
-    </Button>
-    )
-}
-const MenuDrawer =()=>{
-  return (
-  <Drawer key='drawer' 
-          anchor='top' 
-          open={menuBtnClicked}
-          onClose={()=>setMenuBtnClicked(false) }
-          sx={{width:'500px',padding:'5px',margin:'5px'}}>
-                <MenuButton/>
-                <Button variant='Contained' 
-                href='/'
-                >
-          Wahsega
-        </Button>
-            <Box sx={{
-              display:'flex',
-              flexDirection:'column',
-              margin:'5px'
-              }}>
-              {ButtonMap}
-              </Box>
-  </Drawer>)
-}
+
+
 
   return (
     < >
     <AppBar  >
       {isMobile? <div>
-        <MenuButton  />
-      <MenuDrawer />
+        <MenuButton setMenuBtnClicked={setMenuBtnClicked} menuBtnClicked={menuBtnClicked}/>
+      <MenuDrawer ButtonMap={ButtonMap} menuBtnClicked={menuBtnClicked} setMenuBtnClicked={setMenuBtnClicked}/>
       </div>
             :
       <ToolBar sx={{justifyContent:'space-between'}} >
