@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../../../../pages/Contact'
+import Contact from '../../../../pages/Contact/Contact'
 import { Container } from '@mui/material'
 
 const Page = ({customCssProperties,children}) => {

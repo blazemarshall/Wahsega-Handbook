@@ -1,15 +1,18 @@
 import { Route, Routes } from "react-router"
 import Home from "../pages/Home/Home.jsx"
 import Culture from "../pages/Culture/Culture.jsx"
-import Safety from "../pages/Safety"
-import Policies from "../pages/Policies"
-import Contact from "../pages/Contact"
-import Benefits from "../pages/Benefits"
+import Safety from "../pages/Safety/Safety.jsx"
+import Policies from "../pages/Policies/Policies.jsx"
+import Contact from "../pages/Contact/Contact.jsx"
+import Benefits from "../pages/Benefits/Benefits"
 import About from "../pages/About/About.jsx"
 import WhoWeAre from "../pages/About/Components/WhoWeAre.jsx"
 import WhereWeCameFrom from "../pages/About/Components/WhereWeCameFrom.jsx"
 import WhatWeBelieveIn from "../pages/About/Components/WhatWeBelieveIn.jsx"
 import Ethics from "../pages/About/Components/Ethics.jsx"
+import FourZeroOneK from "../pages/Benefits/components/FourZeroOneK.jsx"
+import SapReimbursement from "../pages/Benefits/components/SapReimbursement"
+import Insurance from "../pages/Benefits/components/Insurance"
 
 const RoutePaths = () => {
   return (
@@ -19,15 +22,21 @@ const RoutePaths = () => {
           <Route path='1' element={<WhoWeAre />} />
           <Route path='2' element={<WhereWeCameFrom />} />
           <Route path='3' element={<WhatWeBelieveIn />} />
-          <Route path='4' element={<Ethics />} />s
+          <Route path='4' element={<Ethics />} />
         </Route>
-        <Route  path ='/benefits' element={<Benefits />} />
+        <Route  path ='/benefits' element={<Benefits />} >
+          <Route path='1' element={<Insurance />} />
+          <Route path='2' element={<SapReimbursement />} />
+          <Route path='3' element={<FourZeroOneK />} />
+        </Route>
+
         <Route  path ='/contact' element={<Contact/>} />
         <Route  path ='/policies' element={<Policies />} />
         <Route  path ='/safety' element={<Safety />} />
         <Route  path ='/culture' element={<Culture />} />
     </Routes>
   )
+
 }
 
 export default RoutePaths

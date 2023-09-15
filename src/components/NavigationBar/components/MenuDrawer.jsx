@@ -19,9 +19,10 @@ const MenuDrawer = ({setMenuBtnClicked,menuBtnClicked,ButtonMap}) => {
                   variant='Contained' 
                   href='/'
                   sx={{
-                    '&:hover':{backgroundColor:'dodgerblue'},
+                    // '&:hover':{backgroundColor:'dodgerblue'},
                     // opacity:'.5',
-                    color:'black',
+                    color:'dodgerblue',
+                    transition:'all 1s ease-in-out',
                     padding:'25px 0 15px 0'
                   }}
                       >
