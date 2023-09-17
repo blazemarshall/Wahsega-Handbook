@@ -1,17 +1,22 @@
 import { Button, Toolbar } from '@mui/material'
 import React from 'react'
+import SubPageNavBtn from '../../buttons/SubPageNavBtn'
 
 const SubPageNav = ({pagesToLinksArray}) => {
-    console.log(pagesToLinksArray,'apge')
-        const PageLinkMap = pagesToLinksArray.map((page,index)=>{
-           return <Button key={index} href={page.toLowerCase()}>{page}</Button>
+
+
+
+
+        const SubPageNavButtonMap = pagesToLinksArray.map((page,index)=>{
+            return <SubPageNavBtn key={index} endPoint={`/benefits/${index}`} text={page} />
         })
 
     return (
     <Toolbar sx={{
         
     }}>
-        {PageLinkMap}
+        {/* {PageLinkMap} */}
+        {SubPageNavButtonMap}
     </Toolbar>
   )
 }

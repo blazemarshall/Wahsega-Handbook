@@ -1,15 +1,15 @@
 import { Typography } from '@mui/material'
 import React from 'react'
 
-const BlockTitle = ({text,children}) => {
+const ParagraphBlock = ({children}) => {
   return (
-    <Typography 
+    <Typography
         sx={{
-          textDecoration:'underline'
-
+        textIndent:'2rem'
         }}
+        variant='p'
     >{children}</Typography>
   )
 }
 
-export default BlockTitle
+export default ParagraphBlock

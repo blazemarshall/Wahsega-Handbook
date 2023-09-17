@@ -10,14 +10,14 @@ const Ethics = () => {
       <PageTitle>Ethics</PageTitle>
       <Box>
         <Box>
-          <BulletPoint>• Competitors - We never bad-mouth a competitor</BulletPoint>
-          <BulletPoint>• Listen - We always listen first</BulletPoint>
-          <BulletPoint>• Tell the Truth - We do not make false claims, exaggerate, or oversell a product</BulletPoint>
+          <BulletPoint>Competitors - We never bad-mouth a competitor</BulletPoint>
+          <BulletPoint>Listen - We always listen first</BulletPoint>
+          <BulletPoint>Tell the Truth - We do not make false claims, exaggerate, or oversell a product</BulletPoint>
         </Box>
         <Box>
-          <BulletPoint>• Respect - Always respect everyone’s time</BulletPoint>
-          <BulletPoint>• Privacy - Don’t be creepy</BulletPoint>
-          <BulletPoint>• Transparency - Customers can easily self-discover our products and technology</BulletPoint>
+          <BulletPoint> Respect - Always respect everyone’s time</BulletPoint>
+          <BulletPoint> Privacy - Don’t be creepy</BulletPoint>
+          <BulletPoint> Transparency - Customers can easily self-discover our products and technology</BulletPoint>
 
         </Box>
 

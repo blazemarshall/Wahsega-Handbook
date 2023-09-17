@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
 import React from 'react'
 
-const ContentBlock = ({customCSSProperties,children}) => {
+const ContentExample = ({customCSSProperties,children}) => {
   return (
     <Box sx={{
             customCSSProperties,
@@ -9,8 +9,8 @@ const ContentBlock = ({customCSSProperties,children}) => {
             alignItems:'center',
             justifyContent:'center',
             // padding:'50px',
-            backgroundColor:'info.dark',
-            boxShadow:'0 0 1500px 5px #1976d2 inset,0 0 10px black'
+            backgroundColor:'#3399ff',
+            boxShadow:'0 0 1500px 5px black inset,0 0 10px black'
         
     }}>
         {children}
@@ -18,4 +18,4 @@ const ContentBlock = ({customCSSProperties,children}) => {
   )
 }
 
-export default ContentBlock
+export default ContentExample

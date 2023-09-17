@@ -9,7 +9,7 @@ const PageTitle = ({customCSSProperties,children}) => {
             display:'flex',
             justifyContent:'center',
             fontSize:'3rem',
-            padding:'10px'
+            padding:'10px',
             // backgroundColor:'white',
             // margin:'110px 0 0 0'
         }}>

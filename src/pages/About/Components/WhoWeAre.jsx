@@ -53,10 +53,13 @@ what they do best.
             >“Never Copy. Always Surpass.” – Joey Gullo, VP of Sales</Typography>
             <Box 
             sx={{
-                height:'300px',
+                // margin:'0 0 20px 0',
+                padding:'20px',
+                backgroundOrigin:'center',
+                height:'200px',
                 backgroundSize:'contain',
                 backgroundRepeat:'no-repeat',
-                width:'300px',
+                width:'400px',
                 backgroundImage:"url('https://images.unsplash.com/photo-1551636898-47668aa61de2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXhwZWN0YXRpb25zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60')"}}
             ></Box>
             {/* <Box /> */}

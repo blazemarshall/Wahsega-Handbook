@@ -13,21 +13,23 @@ import Ethics from "../pages/About/Components/Ethics.jsx"
 import FourZeroOneK from "../pages/Benefits/components/FourZeroOneK.jsx"
 import SapReimbursement from "../pages/Benefits/components/SapReimbursement"
 import Insurance from "../pages/Benefits/components/Insurance"
+import Time_Off from "../pages/Benefits/components/Time_Off.jsx"
 
 const RoutePaths = () => {
   return (
     <Routes>
         <Route  path ='/' element={<Home />} />
         <Route  path ='about' element={<About />} >
-          <Route path='1' element={<WhoWeAre />} />
-          <Route path='2' element={<WhereWeCameFrom />} />
-          <Route path='3' element={<WhatWeBelieveIn />} />
-          <Route path='4' element={<Ethics />} />
+          <Route path='0' element={<WhoWeAre />} />
+          <Route path='1' element={<WhereWeCameFrom />} />
+          <Route path='2' element={<WhatWeBelieveIn />} />
+          <Route path='3' element={<Ethics />} />
         </Route>
         <Route  path ='/benefits' element={<Benefits />} >
-          <Route path='1' element={<Insurance />} />
-          <Route path='2' element={<SapReimbursement />} />
-          <Route path='3' element={<FourZeroOneK />} />
+          <Route path='0' element={<Insurance />} />
+          {/* <Route path='1' element={<SapReimbursement />} /> */}
+          <Route path='2' element={<FourZeroOneK />} />
+          <Route path='3' element={<Time_Off />} />
         </Route>
 
         <Route  path ='/contact' element={<Contact/>} />

@@ -3,7 +3,6 @@ import { Box, Button, Drawer, List, ListItem, useMediaQuery,} from '@mui/materia
 import AppBar from '@mui/material/AppBar'
 import ToolBar from '@mui/material/Toolbar'
 import { useState } from 'react'
-import MenuIcon from '@mui/icons-material/Menu';
 import MenuButton from './components/MenuButton'
 import MenuDrawer from './components/MenuDrawer.jsx'
 
@@ -14,11 +13,11 @@ const [menuBtnClicked ,setMenuBtnClicked]= useState(false)
 const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
 
-const buttonList = ['About','Culture','Safety','Policies','Benefits','Time-Off','Contact']
+const buttonList = ['About','Culture','Safety','Policies','Benefits','Contact']
 const ButtonMap = buttonList.map((button,index)=>{
   return (
     <Button key={index} 
-    href={button.toLowerCase() === 'about'?`/${button.toLowerCase()}/1`:`/${button.toLowerCase()}`}
+    href={button.toLowerCase() === 'about'?`/${button.toLowerCase()}/0`:`/${button.toLowerCase()}`}
     sx={{
       color:'white',
       padding:'20px 5px',

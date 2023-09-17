@@ -8,7 +8,7 @@ const BulletPoint = ({children}) => {
       color:'white',
       fontSize:'10px'
     }}>
-        {children}
+        {' •  '}{children}
     </Typography>
   )
 }
