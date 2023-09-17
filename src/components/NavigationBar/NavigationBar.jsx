@@ -16,26 +16,25 @@ const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 const buttonList = ['About','Culture','Safety','Policies','Benefits','Contact']
 const ButtonMap = buttonList.map((button,index)=>{
   return (
-    <Button key={index} 
-    // onClick={()=>}
-    href={
-      button.toLowerCase() === 'about'||
-      button.toLowerCase() === 'benefits'
-
-    ?`/${button.toLowerCase()}/0`:`/${button.toLowerCase()}`}
-    sx={{
-      color:'white',
-      padding:'20px 5px',
-      margin:'0 2.5px',
-      transition:'all 1s ease-in-out',
-      backgroundColor:'primary.main',
-      borderRadius:"0px",
-      '&:hover':{
-        backgroundColor:'white',
-        // borderRadius:'2px',
-        color:'hotpink',
-        // padding:'0px'
-      }
+    <Button 
+      key={index} 
+      // onClick={()=>}
+      href={
+        button.toLowerCase() === 'about'||
+        button.toLowerCase() === 'benefits'
+      ?`/${button.toLowerCase()}/0`:`/${button.toLowerCase()}`}
+      sx={{
+        color:'white',
+        padding:'20px 5px',
+        margin:'0 2.5px',
+        transition:'all 1s ease-in-out',
+        backgroundColor:'primary.main',
+        borderRadius:"0px",
+        '&:hover':{
+          textDecoration:'underline',  
+          backgroundColor:'white',
+          color:'primary.dark',
+        }
     }}>
       {button}
     </Button>

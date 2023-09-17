@@ -15,19 +15,7 @@ const MenuDrawer = ({setMenuBtnClicked,menuBtnClicked,ButtonMap}) => {
                   }}>
               
               <MenuButton menuBtnClicked={menuBtnClicked} setMenuBtnClicked={setMenuBtnClicked}/>
-              <Button 
-                  variant='Contained' 
-                  href='/'
-                  sx={{
-                    // '&:hover':{backgroundColor:'dodgerblue'},
-                    // opacity:'.5',
-                    color:'dodgerblue',
-                    transition:'all 1s ease-in-out',
-                    padding:'25px 0 15px 0'
-                  }}
-                      >
-                Wahsega HandBook Home
-              </Button>
+
                   <Box sx={{
                     display:'flex',
                     flexDirection:'column',

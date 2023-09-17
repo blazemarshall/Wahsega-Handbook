@@ -1,17 +1,54 @@
-import { Button } from '@mui/material'
+import { Button, Stack, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 
 import React from 'react'
 
 const MenuButton = ({menuBtnClicked,setMenuBtnClicked}) => {
   return (
-    <Button key='menuBtn' sx={{
+    <Stack 
+      sx={{
+        display:"flex",
+        flexDirection:'row',
+        alignItems:'center',
+        // flex:' 6 6',
+        // gap:'5rem',
+        backgroundColor:'primary.main'
+      }}>
+
+      <Button 
+        key='menuBtn'
+        sx={{
+          display:'flex',
+          flex:'1',
           borderRadius:'0',
           padding:'20px'
         }}
-           onClick={()=>setMenuBtnClicked(!menuBtnClicked)} 
-        variant='contained'  ><MenuIcon />
+        onClick={()=>setMenuBtnClicked(!menuBtnClicked)} 
+    variant='contained'  ><MenuIcon />
         </Button>
+        <Button 
+                  variant='Contained' 
+                  href='/'
+                  sx={{
+                    display:'flex',
+                    flex:'3',
+                    '&:hover':{
+                      backgroundColor:'primary.dark',
+                      textDecoration:'underline'
+
+                    },
+                    backgroundColor:'primary.main',
+                    // opacity:'.5',
+                    color:'white',
+
+                    transition:'all 1s ease-in-out',
+                    padding:'25px 0 15px 0'
+                  }}
+                      >
+                Wahsega HandBook
+              </Button>
+
+    </Stack>
     
   )
 }
