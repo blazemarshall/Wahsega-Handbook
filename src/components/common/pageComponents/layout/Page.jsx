@@ -5,7 +5,10 @@ import { Container } from '@mui/material'
 const Page = ({customCssProperties,children}) => {
   return (
     <Container sx={{
-        customCssProperties,
+        ...customCssProperties,
+        boxShadow:'0 5px 100px 0px black',
+
+        // padding:'0 10px'
         // display:'flex',
         // flexDirection:'column',
         // margin:'0 -22px ',

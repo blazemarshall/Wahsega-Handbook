@@ -5,18 +5,9 @@ import SubPage from "../../../components/common/pageComponents/layout/SubPage"
 
 const WhatWeBelieveIn = () => {
   return (
-    <SubPage
-    //  sx={{
-        // display:'flex',
-        // flexDirection:'column',
-        // boxShadow:'0 0px 50px 5px #1976d2 inset',
-        // backgroundColor:'info.dark',
-        // margin:'0 -2.9%',
-        // width:'91.5vw'
-    // }}
-    >
+    <SubPage>
         <Box sx={{
-            padding:'60px',
+            // padding:'60px',
             justifyContent:'center',
             display:'flex',
         }}>
@@ -37,11 +28,11 @@ substantial changes over time.
 }}>
 <Typography color={"white"}>The core tenets of continuous improvement of Kaizen include:</Typography>
 <Stack direction={"column"}>
-    <BulletPoint color={'white'} variant="h8">● Standardizing a process so it is repeatable and organized</BulletPoint>
-    <BulletPoint color={'white'} variant="h8">● Focusing on measurability and evaluating progress using data</BulletPoint>
-    <BulletPoint color={'white'} variant="h8">● Comparing results against your requirements (did you deliver on your promise?)</BulletPoint>
-    <BulletPoint color={'white'} variant="h8">● Innovating new and better ways to achieve similar results </BulletPoint>
-    <BulletPoint color={'white'} variant="h8">● Responding to changing circumstance and evolving your methods over time</BulletPoint>
+    <BulletPoint color={'white'} variant="h8"> Standardizing a process so it is repeatable and organized</BulletPoint>
+    <BulletPoint color={'white'} variant="h8"> Focusing on measurability and evaluating progress using data</BulletPoint>
+    <BulletPoint color={'white'} variant="h8"> Comparing results against your requirements (did you deliver on your promise?)</BulletPoint>
+    <BulletPoint color={'white'} variant="h8"> Innovating new and better ways to achieve similar results </BulletPoint>
+    <BulletPoint color={'white'} variant="h8"> Responding to changing circumstance and evolving your methods over time</BulletPoint>
 </Stack>
 </Box>
 <Typography color={'white'} variant="p">At Wahsega, our goal is to empower our team members to make their processes better and the

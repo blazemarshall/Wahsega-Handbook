@@ -3,7 +3,7 @@ import Welcome from "./Welcome"
 const Home = () => {
   return (
   <Page>
-  <Welcome />
+    <Welcome />
   </Page>
     
   

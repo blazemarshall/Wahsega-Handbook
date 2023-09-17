@@ -1,21 +1,15 @@
 import {  Container, Toolbar,  } from "@mui/material"
 import Diversity from "./Components/Diversity"
 import Ethics from "./Components/Ethics"
+import Page from "../../components/common/pageComponents/layout/Page"
 
 const Culture = () => {
   return (
-    <Container sx={{
-      height:'full'
-    }} >
-      <Toolbar>
+    <Page customCssProperties={{backgroundColor:'orange'}}>
 
-      {/* <Button href='#whoWeAre'>Who We Are</Button> */}
-
-      </Toolbar>
-      {/* <Typography variant="h1">Culture</Typography> */}
     <Diversity />
     <Ethics />
-    </Container>
+      </Page>
   )
 }
 

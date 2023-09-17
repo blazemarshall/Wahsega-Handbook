@@ -28,8 +28,8 @@ const RoutePaths = () => {
         <Route  path ='/benefits' element={<Benefits />} >
           <Route path='0' element={<Insurance />} />
           {/* <Route path='1' element={<SapReimbursement />} /> */}
-          <Route path='2' element={<FourZeroOneK />} />
-          <Route path='3' element={<Time_Off />} />
+          <Route path='1' element={<FourZeroOneK />} />
+          <Route path='2' element={<Time_Off />} />
         </Route>
 
         <Route  path ='/contact' element={<Contact/>} />

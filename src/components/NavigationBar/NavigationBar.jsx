@@ -1,5 +1,5 @@
 import { useTheme } from '@emotion/react'
-import { Box, Button, Drawer, List, ListItem, useMediaQuery,} from '@mui/material'
+import { Box, Button, useMediaQuery,} from '@mui/material'
 import AppBar from '@mui/material/AppBar'
 import ToolBar from '@mui/material/Toolbar'
 import { useState } from 'react'
@@ -17,7 +17,12 @@ const buttonList = ['About','Culture','Safety','Policies','Benefits','Contact']
 const ButtonMap = buttonList.map((button,index)=>{
   return (
     <Button key={index} 
-    href={button.toLowerCase() === 'about'?`/${button.toLowerCase()}/0`:`/${button.toLowerCase()}`}
+    // onClick={()=>}
+    href={
+      button.toLowerCase() === 'about'||
+      button.toLowerCase() === 'benefits'
+
+    ?`/${button.toLowerCase()}/0`:`/${button.toLowerCase()}`}
     sx={{
       color:'white',
       padding:'20px 5px',

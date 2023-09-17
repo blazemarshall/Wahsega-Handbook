@@ -15,45 +15,44 @@ const WhoWeAre = () => {
             padding:'15px'
 
         }}>
-            <Box sx={{
-                
-            }}>
+            <Box sx={{}}>
                 <BlockTitle  >Mission Statement</BlockTitle>
                 <Typography variant='p' color='white'>
-                Our mission is for every building in the
-world to have an intelligent system that
-protects the people within. With proactive
-monitoring and building intelligence,
-Wahsega creates safe environments that
-allow people to learn, create and work on
-what they do best.
+                        Our mission is for every building in the
+                    world to have an intelligent system that
+                    protects the people within. With proactive
+                    monitoring and building intelligence,
+                    Wahsega creates safe environments that
+                    allow people to learn, create and work on
+                    what they do best.
 
                 </Typography>
             </Box>
-            <Box>
+            <Box sx={{padding:'15px'}}></Box>
+
+            <Box >
                 <BlockTitle >Vision Statement</BlockTitle>
-                <Typography variant='p' color='white'
-                >Intelligent environments everywhere by
-                2027. We provide a safe and secure environment 
-                that allows you to comfortably focus on your 
-                job or education.</Typography>
+                <Typography variant='p' color='white' >
+                        Intelligent environments everywhere by
+                    2027. We provide a safe and secure environment 
+                    that allows you to comfortably focus on your 
+                    job or education.
+                </Typography>
             </Box>
         </Box>
-        <ContentBlock 
-        // sx={{
-        //     display:'flex',
-        //     padding:'50px',
-        //     backgroundColor:'#3399ff',
-        //     boxShadow:'0 0 1500px 5px black inset,0 0 10px black'
-        // }}
-        >
+        <Box sx={{
+            padding:'0 0 10px 0'
+            }}>
+
+        <ContentBlock >
+
+        
             <Typography color='white' sx={{
                 padding:'100px 20px'
             }}
             >“Never Copy. Always Surpass.” – Joey Gullo, VP of Sales</Typography>
             <Box 
             sx={{
-                // margin:'0 0 20px 0',
                 padding:'20px',
                 backgroundOrigin:'center',
                 height:'200px',
@@ -62,8 +61,8 @@ what they do best.
                 width:'400px',
                 backgroundImage:"url('https://images.unsplash.com/photo-1551636898-47668aa61de2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXhwZWN0YXRpb25zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60')"}}
             ></Box>
-            {/* <Box /> */}
         </ContentBlock>
+                </Box>
     </SubPage>
   )
 }

@@ -1,10 +1,11 @@
 import { Box, Container } from '@mui/material'
 import React from 'react'
 
-const ArticleBlock = ({children}) => {
+const ArticleBlock = ({customCSSProperties,children}) => {
   return (
         <Container
             sx={{
+                ...customCSSProperties,
                 display:'flex',
                 flexDirection:'column',
                 padding:'2rem',
