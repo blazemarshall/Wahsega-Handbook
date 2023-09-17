@@ -13,7 +13,9 @@ const [menuBtnClicked ,setMenuBtnClicked]= useState(false)
 const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
 
-const buttonList = ['About','Culture','Safety','Policies','Benefits','Contact']
+const buttonList = ['About',
+// 'Culture',
+'Safety','Policies','Benefits','Contact']
 const ButtonMap = buttonList.map((button,index)=>{
   return (
     <Button 
@@ -21,7 +23,9 @@ const ButtonMap = buttonList.map((button,index)=>{
       // onClick={()=>}
       href={
         button.toLowerCase() === 'about'||
-        button.toLowerCase() === 'benefits'
+        button.toLowerCase() === 'benefits'||
+        button.toLowerCase() === 'policies'
+
       ?`/${button.toLowerCase()}/0`:`/${button.toLowerCase()}`}
       sx={{
         color:'white',

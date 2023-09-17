@@ -14,6 +14,9 @@ import FourZeroOneK from "../pages/Benefits/components/FourZeroOneK.jsx"
 import SapReimbursement from "../pages/Benefits/components/SapReimbursement"
 import Insurance from "../pages/Benefits/components/Insurance"
 import Time_Off from "../pages/Benefits/components/Time_Off.jsx"
+import Diversity from "../pages/Policies/components/Diversity.jsx"
+import Harassment from "../pages/Policies/components/Harassment.jsx"
+import PhotoVideo from "../pages/Policies/components/PhotoVideo.jsx"
 
 const RoutePaths = () => {
   return (
@@ -27,13 +30,17 @@ const RoutePaths = () => {
         </Route>
         <Route  path ='/benefits' element={<Benefits />} >
           <Route path='0' element={<Insurance />} />
-          {/* <Route path='1' element={<SapReimbursement />} /> */}
           <Route path='1' element={<FourZeroOneK />} />
           <Route path='2' element={<Time_Off />} />
+          {/* <Route path='1' element={<SapReimbursement />} /> */}
         </Route>
 
         <Route  path ='/contact' element={<Contact/>} />
-        <Route  path ='/policies' element={<Policies />} />
+        <Route  path ='/policies' element={<Policies />} >
+          <Route path='0' element={<Diversity />} />
+          <Route path='1' element={<Harassment />} />
+          <Route path="2" element={<PhotoVideo />} />
+        </Route>
         <Route  path ='/safety' element={<Safety />} />
         <Route  path ='/culture' element={<Culture />} />
     </Routes>
