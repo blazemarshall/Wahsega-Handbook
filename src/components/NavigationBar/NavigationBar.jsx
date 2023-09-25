@@ -24,7 +24,9 @@ const ButtonMap = buttonList.map((button,index)=>{
       href={
         button.toLowerCase() === 'about'||
         button.toLowerCase() === 'benefits'||
-        button.toLowerCase() === 'policies'
+        button.toLowerCase() === 'policies'||
+        button.toLowerCase() === 'safety'
+
 
       ?`/${button.toLowerCase()}/0`:`/${button.toLowerCase()}`}
       sx={{

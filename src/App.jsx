@@ -18,13 +18,17 @@ function App() {
 
 
   return (
-    <Container sx={{}}>
+    <Container sx={{
+      // paddingLeft:'50px'
+    }}>
 
     <ThemeProvider theme={theme}>
       <NavigationBar />
         <Box  
           sx={{
-            margin:"70px 0 0 0",
+            margin:"0px -50px",
+            paddingTop:'70px',
+            // paddingLeft:'50px'
           }}
         >
           

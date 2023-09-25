@@ -7,6 +7,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Container sx={{
       // height:'100vh'
+      paddingLeft:'50px'
   }}>
 
     <App  />

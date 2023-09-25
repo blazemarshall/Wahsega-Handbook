@@ -8,9 +8,11 @@ const ContentBlock = ({customCSSProperties,children}) => {
             display:'flex',
             alignItems:'center',
             justifyContent:'center',
-            // padding:'50px',
-            backgroundColor:'info.dark',
-            boxShadow:'0 0 1500px 5px #1976d2 inset,0 0 10px black'
+            padding:'50px',
+            margin:'0 10px 0 0',
+            // backgroundColor:'#f1f1f1f',
+            boxShadow:'0 -3px 5px black inset'
+            // 0 0 10px black'
         
     }}>
         {children}

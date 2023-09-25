@@ -17,6 +17,9 @@ import Time_Off from "../pages/Benefits/components/Time_Off.jsx"
 import Diversity from "../pages/Policies/components/Diversity.jsx"
 import Harassment from "../pages/Policies/components/Harassment.jsx"
 import PhotoVideo from "../pages/Policies/components/PhotoVideo.jsx"
+import SafetyPolicies from "../pages/Safety/components/SafetyPolicies.jsx"
+import Responsiblities from "../pages/Safety/components/Responsiblities.jsx"
+import Protocols from "../pages/Safety/components/Protocols.jsx"
 
 const RoutePaths = () => {
   return (
@@ -41,7 +44,13 @@ const RoutePaths = () => {
           <Route path='1' element={<Harassment />} />
           <Route path="2" element={<PhotoVideo />} />
         </Route>
-        <Route  path ='/safety' element={<Safety />} />
+        
+        <Route  path ='/safety' element={<Safety />} >
+          <Route path='0' element={<SafetyPolicies />} />
+          {/* <Route path='1' element={<Responsiblities />} /> */}
+          <Route path='1' element={<Protocols />} />
+
+        </Route>
         <Route  path ='/culture' element={<Culture />} />
     </Routes>
   )

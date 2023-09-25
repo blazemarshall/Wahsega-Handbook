@@ -21,7 +21,9 @@ const MenuButton = ({menuBtnClicked,setMenuBtnClicked}) => {
           display:'flex',
           flex:'1',
           borderRadius:'0',
-          padding:'20px'
+          padding:'25px',
+          // borderBottom:'none',
+          boxShadow:'0 0 1px 0 inset'
         }}
         onClick={()=>setMenuBtnClicked(!menuBtnClicked)} 
     variant='contained'  ><MenuIcon />
@@ -42,7 +44,7 @@ const MenuButton = ({menuBtnClicked,setMenuBtnClicked}) => {
                     color:'white',
 
                     transition:'all 1s ease-in-out',
-                    padding:'25px 0 15px 0'
+                    padding:'25px 0 25px 0'
                   }}
                       >
                 Wahsega HandBook

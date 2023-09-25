@@ -4,7 +4,7 @@ import React from 'react'
 const BulletPoint = ({children}) => {
   return (
     <Typography sx={{
-      padding:'0 0 0 15px',
+      padding:' 5px 0 5px 0px',
       color:'white',
       fontSize:'10px'
     }}>

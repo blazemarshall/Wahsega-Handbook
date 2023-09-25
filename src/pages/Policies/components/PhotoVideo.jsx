@@ -3,12 +3,13 @@ import SubPage from '../../../components/common/pageComponents/layout/SubPage'
 import ArticleBlock from '../../../components/common/pageComponents/layout/ArticleBlock'
 import BlockTitle from '../../../components/common/pageComponents/typography/BlockTitle'
 import ParagraphBlock from '../../../components/common/pageComponents/typography/ParagraphBlock'
+import PageTitle from '../../../components/common/pageComponents/typography/PageTitle'
 
 const PhotoVideo = () => {
   return (
     <SubPage>
+            <PageTitle>Photo/Video Policy</PageTitle>
         <ArticleBlock>
-            <BlockTitle>Photo/Video Policy</BlockTitle>
             <ParagraphBlock>
                     From time to time, we take photos and videos in the
                 course of our work and at sanctioned work events. If you
