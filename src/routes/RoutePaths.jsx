@@ -35,7 +35,6 @@ const RoutePaths = () => {
           <Route path='0' element={<Insurance />} />
           <Route path='1' element={<FourZeroOneK />} />
           <Route path='2' element={<Time_Off />} />
-          {/* <Route path='1' element={<SapReimbursement />} /> */}
         </Route>
 
         <Route  path ='/contact' element={<Contact/>} />
@@ -47,7 +46,6 @@ const RoutePaths = () => {
         
         <Route  path ='/safety' element={<Safety />} >
           <Route path='0' element={<SafetyPolicies />} />
-          {/* <Route path='1' element={<Responsiblities />} /> */}
           <Route path='1' element={<Protocols />} />
 
         </Route>

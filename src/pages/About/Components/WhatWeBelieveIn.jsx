@@ -1,13 +1,16 @@
-import { Box, Container, Stack, Typography } from "@mui/material"
+import { Box, Stack, Typography } from "@mui/material"
 import BulletPoint from "../../../components/common/pageComponents/typography/BulletPoint"
 import PageTitle from "../../../components/common/pageComponents/typography/PageTitle"
 import SubPage from "../../../components/common/pageComponents/layout/SubPage"
 
 const WhatWeBelieveIn = () => {
   return (
-    <SubPage>
+    <SubPage 
+    customCSSProperties={{
+        backgroundColor:'white'
+}} 
+    >
         <Box sx={{
-            // padding:'60px',
             justifyContent:'center',
             display:'flex',
         }}>
@@ -15,7 +18,7 @@ const WhatWeBelieveIn = () => {
         </Box>
         <Box sx={{
             display:'flex',
-            flexDirection:'row'
+            flexDirection:'row',
         }}>
             <Box>
                 <Typography color={'white'}>Kaizen Philosophy</Typography>
@@ -41,8 +44,8 @@ rolling out new initiatives and projects.
 </Typography>
             </Box>
             <Box sx={{
-                                backgroundColor:'#3399ff',
-                                boxShadow:'0 0 150px 5px black inset,0 0 10px black'
+                backgroundColor:'#3399ff',
+                boxShadow:'0 0 150px 5px black inset,0 0 10px black'
             }}>
                 <Typography sx={{
                     color:'white',

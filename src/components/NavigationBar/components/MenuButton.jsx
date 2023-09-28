@@ -2,7 +2,9 @@ import { Button, Stack, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 
 import React from 'react'
-
+const animatedLetters = ()=>{
+  
+}
 const MenuButton = ({menuBtnClicked,setMenuBtnClicked}) => {
   return (
     <Stack 
